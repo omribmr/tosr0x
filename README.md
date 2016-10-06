@@ -46,7 +46,8 @@ Usage
 ----------------------
 
 Call the handler function to return a list of tosr0x objects:
-!!make sure the wifi module is disconected and power set to DC (not USB)
+
+  !!make sure the wifi module is disconected and power set to DC (not USB)
 
     >import tosr0x
     >th = tosr0x.handler()
@@ -110,8 +111,3 @@ Get Ambient Temperaure n Celsius degree for modules supporting a temperature pro
     >myTosr0x.get_temperature()
     23.94
 
-Projects
-----------------------
-
-* James Stewart (@amorphic) uses to _tosr0x_ to implement an Environmental Controller in [braubuddy](http://braubuddy.org), a temperature monitoring framework.
-* Alex Roche (@alexroche) is using _tosr0x_ with WIFI option to control blinds through openremote controller running on a Raspberry Pi.
