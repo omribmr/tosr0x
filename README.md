@@ -46,6 +46,7 @@ Usage
 ----------------------
 
 Call the handler function to return a list of tosr0x objects:
+!!make sure the wifi module is disconected and power set to DC (not USB)
 
     >import tosr0x
     >th = tosr0x.handler()
@@ -57,7 +58,7 @@ Call the handler function to return a list of tosr0x objects:
     TOSR0x device found on /dev/ttyUSB3
 
     >myTosr0x = th[0]
-    >print myT0sr0x
+    >print myTosr0x
 
     <tosr0x.relayModule instance at 0xb68be46c>
 
@@ -72,7 +73,7 @@ can also specify a range of ports to scan:
 Usually all relays on the module are cycled at initialisation to determine the
 relay count. You can specify a relay count to prevent this:
 
-    >th = tosr0x.handler(devicePath=['/dev/ttyUSB3'], relayCount=4)
+    >th = tosr0x.handler(devicePaths=['/dev/ttyUSB3'], relayCount=4)
 
     Testing USB serial device on /dev/ttyUSB3
     TOSR0x device found on /dev/ttyUSB3
